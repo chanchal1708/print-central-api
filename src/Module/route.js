@@ -1,0 +1,13 @@
+import express from "express";
+const router = express.Router();
+import user from "./user/userRoute.js";
+import dropdown from "./dropdown/dropdownRoute.js";
+import Config from "./Config/ConfigRoute.js";
+import structure from "./structure/structureRoute.js";
+import productiondetails from "./productdetails/productdetailsRoute.js";
+router.use("/user", user);
+router.use("/dropdown", dropdown);
+router.use("/Config", Config);
+router.use("/structure", structure);
+router.use("/productdetails", productiondetails);
+export default router;
